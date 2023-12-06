@@ -31,6 +31,16 @@ const projectsData = [
     gitUrl: "https://github.com/mahdizaltnii/GamingPlateform",
     previewUrl: "/",
   },
+  {
+    id: 4,
+    title: "Aireport Management System",
+    description: "A web application for airline management. Built with .NET Core, Entity Framework, and Fluent API",
+    image: "/images/projects/aireport.jpeg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/mahdizaltnii/AirportManagement",
+    previewUrl: "/",
+  },
+  
   
 ];
 
