@@ -52,7 +52,7 @@ const TAB_DATA = [
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
-  const [ startTransition] = useTransition();
+  const [startTransition] = useTransition();
 
   const handleTabChange = (id) => {
     startTransition(() => {
@@ -63,18 +63,23 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" alt="about image" width={500} height={500} />
+        <Image
+          src="/images/about-image.png"
+          alt="about image"
+          width={500}
+          height={500}
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             I am a Software engineer. I have a burning desire to put together
             well-written code that helps to create advanced applications which
-            are fit for purpose, functionally correct and meets the user's
-            precise needs. My key strengths include being able to use web based
+            are fit for purpose, functionally correct and meets the user&apos;s
+            precise needs. My key strengths include being able to use web-based
             systems that create a highly interactive user experience. On a
-            personal level I'm is loaded with energy and passion. Right now i
-            would like to join a company where there is a culture of
-            encourangement,respect and teamwork.
+            personal level, I&apos;m loaded with energy and passion. Right now,
+            I would like to join a company where there is a culture of
+            encouragement, respect, and teamwork.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
