@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 
 
 const navLinks = [
@@ -55,12 +54,7 @@ const Navbar = () => {
         </Link>
 
         <div className="mobile-menu block md:hidden  items-center gap-3">
-          {/* <button
-            onClick={toggleDarkMode}
-            className="text-white focus:outline-none"
-          >
-            <BsFillMoonStarsFill className="h-5 w-5" />
-          </button> */}
+         
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
@@ -84,12 +78,7 @@ const Navbar = () => {
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
-            {/* <button
-              onClick={toggleDarkMode}
-              className="text-white focus:outline-none"
-            >
-              <BsFillMoonStarsFill className="h-5 w-5" />
-            </button> */}
+           
           </ul>
         </div>
       </div>
