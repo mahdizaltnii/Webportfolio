@@ -28,7 +28,7 @@ const BlogCard = ({ imgUrl, title, previewUrl }) => {
         </div>
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
+        <h5 className="text-xl font-semibold mb-2" href={previewUrl}>{title}</h5>
       </div>
     </div>
   );
