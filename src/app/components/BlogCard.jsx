@@ -3,20 +3,13 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
 
-const BlogCard = ({ imgUrl, title,previewUrl }) => {
+const BlogCard = ({ imgUrl, title, previewUrl }) => {
   return (
-    <div className="relative">
-      <div
-        className="h-54 md:h-72 rounded-t-xl  relative group"
-      >
-              <div className="hidden md:block">
-          <Image
-            src={imgUrl}
-            alt={title}
-            fill className="rounded-t-xl " 
-          />
+    <div className="relative" >
+      <div className="h-54 md:h-72 rounded-t-xl  relative group"              >
+        <div className="hidden md:block">
+          <Image src={imgUrl} alt={title} fill className="rounded-t-xl " />
         </div>
-        {/* Conditionally render img tag for mobile */}
         <div className="md:hidden">
           <img
             src={imgUrl}
@@ -25,7 +18,6 @@ const BlogCard = ({ imgUrl, title,previewUrl }) => {
           />
         </div>
 
-        
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
           <Link
             href={previewUrl}
